@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"  href="portfolio.css">
+
+</head>
+
+
+
+
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">ARIBA KHAN</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Certifications</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAb0lEQVRIS+2VyQ3AIBADTWeURjqDyoL2sR+OKA8rIGIX4JFGhg1YlLCIC4E/My/VrjoBuIner7ZrppoJNWbH2Q5MtDyu0qrdSySvumjVs3GZambyW9VM6LBLz8m1/O+vtrPITNencTH1PnZJ9fmqKyfUDB8mdaD4AAAAAElFTkSuQmCC"/></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Ariba Khan</span></h1>
+
+                <a href="#contact" class="button">Contact</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/ariba-khan-a86239211/" class="home__social-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAACKUlEQVRoQ+2Z33HTQBDGv71bzeSNdIDpwFSAqYASYioAKoiogKQCQgdQAaECoAJEBYQ3ZnR3y5ytOJK8GmQsWXKinfGL7nz3m++0f25FOEKjI2TGBH2oU7tvSp/MmN3jQ6lX38c5/gn8ybT9G5Q+mVnrvgI4HQoawI33/FQDV6GZeSGCzwMCF1vTS+/zqzrHqKGJ8NY5lz48aBF8J6ILINwAtATwos9XaG+lI3AIbl6GZOYLEbzqC3xvaEBzilWU+TFaaCI8d85d1wGtZRktNEAfvM/je7wxa5MlIO9HDA2IIA3BXcbAb609A6JT9peAOnin+9Kzed2HCR1DnjF4XdYlBJoTybv4TBsXibFczgB8MobSPM+/3f1/VZAtRXDepHUXSn/x3i1qcbpco2jjqQhlWv1wu06SJPMQJBZnWzYIdASqqqtrysyppvgg0O1dV09Sg0Ibw+dEWACSGWMuNfWtTTJAKpeOwaCtTa4KZyyEl8x7/0TJrDHbPis/Hwr61Fr+tVUPKyWBtTwO6KYbkFbHbJ8IMIjSTdAi9CaEPJYAG9MiyKigNZgJunSC/5MR1Vv9pPStqg0ONCld72dMjnjniJKJUKVFRSSzov8RK+p/jFfy4rUIKpfkdW2y+m2sizjdvmjraOYE3ZGQLZbZoWsKrIryeJ971GLlvqb89p7nrfvTa4oI7hdrZzusFffKj7G/ou183765HFbdXXablN5FrX3mHqXSfwFQE3FMNllYaQAAAABJRU5ErkJggg=="style="margin: auto;"/><b>LinkedIn</b></a>
+                <a href="https://instagram.com/_ariba._.khan?igshid=pj49jybz0335" class="home__social-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAADHUlEQVRoQ+2YS65NQRSG/zsCjIA7AkzAIyEREo8RYATo6QhuTwsjwAgQCaGDhjZGgBFgBORLqpKVUlVr1X6c5Map5HTO3rvqq79W/WtV7Wgftp19yKwt9KZW7b9T+pikAzPU/S3py5TvR5Q+KOmqpGuSAF6qAf5U0jNJvyKdRqEBfSgJ8LUawLfSBLpjRKDvSbpb6eWj+Y8BI0t9RBK/3E5W+kX16z1qDxqFn5gOAH0k6cVCcrNylyUhzGHTJ9DAV1sPmg6/mZAg5pjEGo2xEIM9Q2Pldlsx3oO+meKYTlD41MK0ZySdkPRJ0tskDiGWFSe+mcg/rQf92bjEaUkfFoQ+K+md6e+CpNdpJXM4MoHjo9B/0gf46RTXYGVaE92TdMcAPZB0O21SQjK3qqgtpfFhlB4JDVwBl2Fj2UkSn2zc+5K+pz7PSXpj4C5KemXiOSet6gq3oFHp/QA0sXcjED68R6zSzpuYzsD8z+pkK5wMjUJYUquh4qUAcH6F96903l8dulS45uOEC05kE8nj9F+NfVVoYthuGs/HSRbZh4HFh3OMW3gLXV3lSEy3wsNCRH3cArUmORna1hstaFwh73JiNJLaCZXnSVZURu2yTYa27tGCzj7OoF4NY8G871aDtpNC8UMD7mGha3G9GjSMnmKteXjfrQo9N6Z/FLV1nuSq0NY9GIjs5bVR96hWenMsr/Rp78QxxadXSeNlRkRJ/ntpJMfmqEtsPb56RuwNANto7eFlzkXSeCTbRas8T4BZVd7UeppMShjYQyougXo8q9Ua5eb9aerxoZi2PjyaPDJE7+TScplycw+dXOiUM9rR1Hu0tvAsz3turyy+tm6yoqfxqA97UL3nHNE44uXLnObhw7v3IAZzJef58FxgTuHYI43DNPDVuz2vOitvmGo+PBeWoxqb1F6XNe88oiVlmclsjWCB2QO9W08cqbyKqF0AeT4eroNRHC+ecx8dWZGuwrkDLzzsQKjEAZW4y64SAfHewcfJqogS8fGw0uXATCBfrNeW3QPNN09AhkBthyNKeyAbe76F3pTUW6U3pfRfCkLQLo2PnhUAAAAASUVORK5CYII="  style="margin: auto;"/><b class='bx bxl-behance' >Instagram</b></a>
+                <a href="https://github.com/Ariba-Khan" class="home__social-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAADMUlEQVRoQ+2YgdEMQRCF3x8BMiACRIAIEAEiQASIABEgAkSACBABIkAE1Fc1o+bmunt6d2erXNXfVX/9V3czs2/evH7TvWc6wTg7Qcw6B92c2jVJFyT9lvRl9mnOYBqANyTdl8RnLwD/TtL7rRvZAvqepKeSLq9g8nuZ+2bF3FWavinp+YDVLBbAPy4nkJ2zGPSrIoP0A5IDXxfwvzLjs/K4KOmtJFjeK9D8LUlD4BnQAP4wSQ6jDQP4ygh4BjSA92S438iQ8RHoF5Iedqt+LYmDvd0eURf8/knSx0IIltkGGn/gzY1Awy4s90G2sxkCu8P2sL822BhHjbSudr/h048k4RwE/k6C9wFowB9FBNqTBckCQ21U+XC0ViIBvl481lyLHDaFvtOg7xS3sOZYoK1xS7774ww22faY/hy4xWzQngzZh8m2BRqdfgtoajW9hE1vbHSqzLne1yoWaC8xWICM38P+KKQ8J3pWkv3fpi3Q0QKzpVGBRKdLcsN2CBppWJXbj5UVXVZCgOvtsc49INdi2svkvaRRgeHJvd9vBs2lQNLsFVxST5zFD5KxZ5oLALuzYm+mrZKh4jjIpf9JHtyUfQ2yGTTX86W9tFHuBq91GyYi4OikrdjL8iJZgmMIOvJpjhDgsyNyjqNcsjRN2Ujj6oVbMq7cyYjl1I04qj2Qz12jPF2DmZKA3pPS1YtU7cHkPpM5ovrWqC7OkcJCLeaXgIYYPJk6JwqaiaMXQF5p2lZeMIuOuWYtL+V7Nsn/6OULtx0AYDd6E9VuYlE93bMNcBYgSb2keVnaKI+56Maz5ri1TtRu9QlS2/u6ob64oTWKpIJufy7QkGuvS7vxNpNxGWQEUORhNqEdyKiSa4eGpzYCzUKtHGCbbF6TfFaCW8SbydcOzIDmWGGyymGL5UX1BbgATKKGr8YyoFkM4DhHW+/CdmWc3w+6C0e7EWhsFblNeZfXPj9ygAwBHuiR8xxwkHlQTxquAut9GZlZqweNHEjo/gVOaDKZB3kLcJTcaHTR2f6xgkYKJHjGcY6evwV0XazWwBlHQfv8Zca6bM8AveC+mDP0HPQcHsernCTTfwGae6kuS65fDAAAAABJRU5ErkJggg==" style="margin: auto;"/><b class='bx bxl-github' >Github </b></a>
+            </div>
+
+            <div class="home__img">    
+                <img src="" alt="">
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+                
+                <div>
+                    <h2 class="about__subtitle">I'am Ariba Khan</h2>
+                    <p class="about__text">I am from Prayagraj.I am currently pursuing my Bachelor's of Technology in Computer Science and Engineering from United College of Engineering and Research,Prayagraj.I am very Passionate about Web Designing.I had completed my schooling from Bishop George School and College.</p>           
+                </div>                                   
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">          
+                <div>
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <p class="skills__text"></p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+                            
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon' ></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+                            
+                        </div>
+                        <div>
+                            <span class="skills__percentage">60%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-paint skills__icon'></i>
+                            <span class="skills__name">C programming</span>
+                        </div>
+                        <div class="skills__bar skills__C">
+                            
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">Python</span>
+                        </div>
+                        <div class="skills__bar skills__python">
+                            
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div>              
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== CERTIFICATIONS =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Certifications</h2>
+
+            <div class="work__container bd-grid">
+              
+                <div class="work__img">
+                      <img src="C:\Users\Lenovo\Pictures\Screenshots\Screenshot (72).png" alt="" ><br><p style="margin-top: 2px; text-align: center"; >Completed a certified online course of six weeks duration on "Web Development"</p>
+                </div>
+                <div class="work__img">
+                    <img src="C:\Users\Lenovo\Pictures\Screenshots\Screenshot (81).png" alt=""><br><p  style="text-align: center;">Completed a certified training on "C  and HTML" issued by United Global Infoservice Pvt.Ltd,Allahabad </p>
+                </div>
+                <div class="work__img">
+                    <img src="C:\Users\Lenovo\Pictures\Screenshots\Screenshot (87).png" alt=""><br><p style="text-align: center;">A two-day virtual workshop on "Cloud Computing" conducted by Edureka</p>
+                </div>
+                <div class="work__img">
+                    <img src="C:\Users\Lenovo\Downloads\sparks Fondn.png" alt=""><br><p style="text-align: center;">Selected for an online work from home Internship on "Web  Development" by The Sparks Foundation on which I am presently Intern</p>
+                </div>
+                <div class="work__img">
+                    <img src="C:\Users\Lenovo\Pictures\Screenshots\Screenshot (89).png" alt=""><br><br><p style="text-align: center;">Secured an online work from home Internship in "Content Writing"  on which I am Currently an Intern</p>
+                </div>
+                <div class="work__img">
+                    <img src="C:\Users\Lenovo\Pictures\Screenshots\Screenshot (84).png"  alt=""><br><p style="text-align: center;">Certified workshop on "Machine Learning" by MNNIT,Allahabad</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Submit" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Ariba Khan</p><br>
+        <div><img class="footer__icon"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABgklEQVRIS+2WYVUDMRCEZxSAA3AAOKgDQAGtAooCWgUUBdQBoAAkgANwAAqGN31JX67cJS3N4/7c/swl++3O7uZC9GTsiYsB/G/KN6SWNAZwC+C4cgQfAOYkl9HvGixpBOClMnDT3RnJNy+m4FnI1uvzygFYxZVfkuZ0gmckq8AlNRIqgR3UE4AJya+/ZC/pEMADgIvkfDHjuNdNcRnrsm0Akk4BPLY0aRH8DOA8gJzxTdqRuQDCZNwBcMa21FceTJKSpgDsINqS5KQA9bhcJXsc8EKStmoug70xjJhrfRAOehQsvUuwNkmee0triW3fri3J1+BnN3A4ZMns4CSR3vDo1PNvaJT2HcAobcqdM97IagHgOlnzmFiZOKP+dE/SJWrYXuCQva9UBxCljwBLO+1qwL3BAe46uomi9JZ2nBu5KuCk7s7c5kyzl0w1cG6k2r4NYKvS9Vtc/boqWvTXemX28xBI5tTRHVXM1q4+Afgf//vpUxlUdDe8q4sS1drQm9Q/iy/iH124fCIAAAAASUVORK5CYII="/>Gmail : aribakhan967@gmail.com<br> </div>
+        <div class="footer__social">
+           <a href="https://www.linkedin.com/in/ariba-khan-a86239211/" class="footer__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABZklEQVRIS+2X303DMBDGv5NiK3kLE1AmACaATsAIlAlgA2CDbkCZhG4AG9BukLdI8UmHDsWRWwIExUn6QJ4sO/bP992fXAgTPTQRF4cDLstyliTJcUwlmHmbZdkmPHPH4hr6HhPqz2LmkxC+A3bOXQJ4GQIMYG6MWfuzfwWLyJaIYkjfHSwiN9balYjkzKy3Pe2hRjewWmqtnXlQVVULInoaHKyAJEmOiKjQsXNuCeB2FDCANREtReQMwB2AfCxwD86Xrd18XG+b++0ioj6+FpFnIlrpvCpBRAtds9a+6VxdC9QtV3vo7mBjTJNuzrkHAPcAHo0xOv6EpGla+DgIQc45zYKLYC4eOFAj34e3ZEFccBDtBTOf+7LYUgWjgyWQs3FDnYLhWjxwVVUaXK+jg1vkHMfif3CY44MG12BSxyzUf+5AIsK/z+PJmr3g69J0HjEsZubNj+1tDEjXMw7nT6Lrjfu+9wFXCUguJ6NLogAAAABJRU5ErkJggg==" style="margin: auto;"><u>LinkedIn</u></a> <br>
+           <span> <a href="https://instagram.com/_ariba._.khan?igshid=pj49jybz0335" class="footer__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACXklEQVRIS9WWS1IbQQyGpXFrqrwKOUHgBDEnCK5UkmXMCcINAieA3MCcAHKCmG0qD3ICzA28zyL2ylUjeUTJ1eNqzwP3QComvXJ7uvuT1H9LQtjSwC1x4WmDVXVHRF7GRMc5d4uI001rGz2ez+e7RHSa5/kBIu5uOij8rqqTJEmumflTt9ud1O2tBWdZ1kPEnwCw4zfNAGAcCe8BwDO/dqqq/TRNK3srYPPUOXfjoVcictxkdZMh/owhALwHgKmI7JfPqICzLLtExA8AcEVEg0gvV8uYuQ8ACRF9Z+aRwVX1c5qmR+FZdeAJIr4Qkb22nnroDw94q6q/EfHG7jxN071GsFfvHwC4JSK7q8rw928RKb6PReTcjGTm1wDwzW96R0RfmVlt7px7Hqp9zWNmPgAAE9UvIrLfa4OZ7d4+NoR/SEQnzPwGANCgto6ZTVj2FPtEdF3sjQaHULuzJEns/iDP84HXhE3Pieg4NIyZDfbqQWAfXlM6IOKhc24JLYaIDFT1i83L2ngUuPC2Tp0FPHgNa14/FrwMV523AfgIES/K+vhvwUs1//NQb01c/j2u3jAiXgJAoWxTdJEO/+5zKgS0IYFUoNEJJEiZYyLar8tQvvJYkghT5rApr0elTANlWfbgIlE2NNDGjIiK2r5cdl9ZHBHRYUNejvq7VVn0obTEbl3ESERO2pZH7+kpAFg9n4lIb2Mj4MNtrY9lq1UL07L1CVumQViVaqtTGD/zvNPpnCGiWV0YEBVi81JVR4vF4qxVs1c+3Yc/qtNU1Wldc1c+82k39LHxbbNuax7fAaPbrC6quSPoAAAAAElFTkSuQmCC" style="margin: auto;"/><u class='bx bxl-facebook' >Instagram</u></a><br>
+            <a href="https://github.com/Ariba-Khan" class="footer__icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACrElEQVRIS+VW0XHbMAwFzgTv/GV3giYTNJmg8QbOBHUmaDpB3AkSTxB3gmaDuhPUnqDOBFW+fEfSRg86SkfRpCWlH/koPyWS7+EBeATCGy18I1zoDWytvULEETNfCGlEXDNzQUQ/+wTRCXi3250R0R0zTwFgnAEoEPHpcDgstNbrNhIngZl5vN/v75l51nZR+B8Rl4PB4AsiFrlzWWBjzAUiPgJAKWnfxcxbALjORZ8E9qA/TsjalUfBzJMU+BGwyOucE9AyUmZ+RkRh/7Ej2sbv++DPb4noMpb9CNgYs0TETwHIhIhWUmBKqaWowMxrT0aInSGikCycc7PhcLj1iv2q7mDmb1rrRp00gP3lv8PInHPnclnHaOtt1loOzzDzZSh5A9ha+wAAnyOQMuI+wHHEXvJG1A1gY8wWEd8HEj0TkVR3ti1ShKROrLWSjvouSQURvav218AZljdaa8lr72WMmfl2DM/W6tXAYoUAINVcrzgvfdB9d/wJzyDitVLqSb6FEd8i4n24kYg6WWqOUFxgAPCViOatwADQu7AqEqkOSQJnpH51jp1zU2b+HqWuvq+WMsNwRUSTPrmt9iaMSMym7uW4j6VtRjmWXQlkKvqFiOonNWsg3qOrPpwrpRZt/ewrWQyoLKAogLyBhHJL6ctkAQBS/pUKK0RcVC0RyComIx0hLZlcJy1TTlhrhe2dPz3xj4C8y+VKeXeqZyP0BRHdNno6IYk8i+LN8qyVxeVdbSrzVRxtdd5ae1Qf/t9GKSVzWsN2kwbhJZe5aSRjjFLqpq2wrLVCNn6zX5j5qtMgEBmA5Ld80AFApsmx1vo8RSIR8UZmtV6jT3Wxz53kpso55Gw0skcpwPmrhr0wKi+9EJAxV0bco+UNQ6aQhy6Dwz89Am15P/X//wP+C4Q/ei7bDkQxAAAAAElFTkSuQmCC" style="margin: auto;"/><u class='bx bxl-twitter' >Github </u></a>
+           
+        </div>
+        <p>&#169; 2021 copyright all right reserved</p>
+    </footer>
+</body>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script src="profile.js"></script>
+
+</html>
+
+  
